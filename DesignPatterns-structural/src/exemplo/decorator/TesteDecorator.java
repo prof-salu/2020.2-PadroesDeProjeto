@@ -6,5 +6,7 @@ public class TesteDecorator {
 		System.out.println(coquetel.getNome() + ": " + coquetel.getPreco());
 		coquetel = new SucoLaranja(coquetel);
 		System.out.println(coquetel.getNome() + ": " + coquetel.getPreco());
+		coquetel = new Licor(coquetel);
+		System.out.println(coquetel.getNome() + ": " + coquetel.getPreco());
 	}
 }
