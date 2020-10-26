@@ -9,7 +9,7 @@ public class MarioGrande implements MarioState {
 
 	@Override
 	public MarioState pegarFlor() {
-		System.out.println("Mario comfogo");
+		System.out.println("Mario com fogo");
 		return new MarioFogo();
 	}
 

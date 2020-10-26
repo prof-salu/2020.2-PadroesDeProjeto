@@ -4,6 +4,7 @@ public class Funcionario {
 	public static final int DESENVOLVEDOR = 1;
 	public static final int GERENTE = 2;
 	public static final int DBA = 3;
+	
 	protected double salarioBase;
 	protected int cargo;
 	protected String descricaoCargo;

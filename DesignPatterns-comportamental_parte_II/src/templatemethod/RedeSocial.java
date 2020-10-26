@@ -1,14 +1,17 @@
 package templatemethod;
 
 public abstract class RedeSocial {
-	String user;
-    String password;
+	protected String user;
+	protected String password;
 
-    RedeSocial() {}
+	public RedeSocial(String user, String password) {
+        this.user = user;
+        this.password = password;
+    }
 
     public boolean postar(String message) {
 
-        if (logIn(this.user, this.password)) {
+        if (logIn()) {
 
             boolean resultado =  enviarDados(message.getBytes());
             logOut();
@@ -17,7 +20,7 @@ public abstract class RedeSocial {
         return false;
     }
 
-    abstract boolean logIn(String userName, String password);
-    abstract boolean enviarDados(byte[] dados);
-    abstract void logOut();
+    public abstract boolean logIn();
+    public abstract boolean enviarDados(byte[] dados);
+    public abstract void logOut();
 }

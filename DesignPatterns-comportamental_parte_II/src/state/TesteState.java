@@ -16,5 +16,4 @@ public class TesteState {
 		mario.levarDano();
 		mario.levarDano();
 	}
-
 }

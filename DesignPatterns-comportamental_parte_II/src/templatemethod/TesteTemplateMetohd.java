@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class TesteTemplateMetohd {
 	 public static void main(String[] args) throws IOException {
+		 
 	        Scanner sc = new Scanner(System.in);
 	        RedeSocial redeSocial = null;
 	        System.out.print("Usuário: ");

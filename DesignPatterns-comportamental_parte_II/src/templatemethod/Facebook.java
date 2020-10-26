@@ -2,11 +2,10 @@ package templatemethod;
 
 public class Facebook extends RedeSocial{
 	public Facebook(String user, String password) {
-        this.user = user;
-        this.password = password;
+        super(user, password);
     }
-
-    public boolean logIn(String userName, String password) {
+	
+    public boolean logIn() {
         System.out.println("\nVerificando parâmetros do usuário");
         System.out.println("User: " + this.user);
         System.out.print("Password: ");
