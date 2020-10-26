@@ -6,8 +6,7 @@ public class IOSColleague extends Colleague {
 	}
 
 	@Override
-	public
-	void receberMensagem(String mensagem) {
+	public void receberMensagem(String mensagem) {
 		System.out.println("iOs recebeu: " + mensagem);
 	}
 }
